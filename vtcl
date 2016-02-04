@@ -1,0 +1,13 @@
+#!/bin/sh
+HERE=`pwd`
+PATH_TO_WISH=/usr/bin/wish
+#PATH_TO_WISH=/usr/local/bin/wish8.4
+#PATH_TO_WISH=/opt/ActiveTcl-8.5/bin/wish
+#VTCL_HOME=/usr/local/vtcl-modified
+VTCL_HOME=$HERE
+
+export PATH_TO_WISH
+export VTCL_HOME
+
+exec ${PATH_TO_WISH} ${VTCL_HOME}/vtcl.tcl $*
+
