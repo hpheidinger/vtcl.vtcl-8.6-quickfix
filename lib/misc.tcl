@@ -1173,7 +1173,8 @@ proc ::vTcl::web_browser {} {
     	#if {![file executable [file join $path netscape]]} { continue }
 	
 	#return [file join $path netscape]
-	return mozilla
+	#return mozilla
+	return firefox		# hph, 20160205
     }
 }
 

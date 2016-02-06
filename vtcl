@@ -1,8 +1,13 @@
 #!/bin/sh
 HERE=`pwd`
-PATH_TO_WISH=/usr/bin/wish
+
+
+#PATH_TO_WISH=/usr/bin/wish
 #PATH_TO_WISH=/usr/local/bin/wish8.4
 #PATH_TO_WISH=/opt/ActiveTcl-8.5/bin/wish
+PATH_TO_WISH=/opt/ActiveTcl-8.6/bin/wish
+
+###### Vtcl home ... 
 #VTCL_HOME=/usr/local/vtcl-modified
 VTCL_HOME=$HERE
 

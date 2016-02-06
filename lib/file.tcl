@@ -123,6 +123,7 @@ proc vTcl:source {file newprocs} {
 
     foreach context [vTcl:namespace_tree] {
 		if {$context == "::tcl::dict"} continue
+		if {$context == "::itcl::builtin"} continue	#hph,2016-02-04
         set cop [namespace eval $context {info procs}]
 
         foreach procname $cop {
@@ -146,6 +147,7 @@ proc vTcl:source {file newprocs} {
     set np ""
     foreach context [vTcl:namespace_tree] {
 		if {$context == "::tcl::dict"} continue
+		if {$context == "::itcl::builtin"} continue	#hph,2016-02-04
 		
         set cop [namespace eval $context {info procs}]
 
