@@ -1,0 +1,6 @@
+--------------------------[2016-0-203/hph]-------------------------------------------
+Started on the modified vtcl-1.6.1.a1 release with the modifications by Rildo Pragana
+-------------------------------------------------------------------------------------
+
+--------------
+2016-02-24/hph	Replaced a call for 'exec tclkit ...' by 'exec wish ...' in vtcl.tcl 
